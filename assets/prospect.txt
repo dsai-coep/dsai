@@ -15,3 +15,9 @@ people
 6) Change logos
 7) Photo Gallery needs better organization
 8) Events page - Outlook Festival
+
+Green/Black underline above Come hear us at in Black
+GitHub and Blog
+
+Ensure dsai logo on every page
+Put it in Navbar and Footer

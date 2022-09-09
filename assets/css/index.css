@@ -226,8 +226,8 @@
 }
 
 .navbar-img {
-    width: 64px;
-    height: auto
+    width: 64px !important;
+    height: auto !important;
 }
 
 .navbar {
@@ -486,8 +486,122 @@ nav {
 .active {
     text-decoration: underline !important;
 }
+.particles-js {
+    z-index: 1000;
+}
+
+.count-particles {
+    z-index: 1000;
+}
+
+.footer {
+    position: fixed;
+    bottom: -10px;
+    width: 100%;
+    z-index: 5000;
+}
+
+.footer-img {
+    width: 32px;
+    height: auto;
+}
+
+footer.navbar-brand {
+    padding: 0;
+}
+
+footer {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.title {
+    position: absolute;
+    z-index: 2000;
+    margin-left: 21%;
+    background-color: rgba(240, 242, 245, 0.42);
+    border-radius: 5px;
+    padding: 1% 1%;
+}
+
+.content-flex-1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.content-flex-2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.content-holder {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active-text{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content-title {
+    background-color: #212121;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background-color: #f9f9f9;
+    padding: 10% 5%;
+}
+
+.check-our {
+    display: flex;
+}
+
+li {
+    list-style: unset;
+}
+
+ol {
+    font-size: large;
+}
+
+p {
+    font-size: large;
+}
 
 body {
     position: relative;
     min-width: 960px;
+}
+
+.navbar-img {
+    margin: 0% 10%;
+}
+
+.works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-img {
+    width: 40px;
+    height: auto;
+}
+
+.dsai-img {
+    width: 64px;
+    height: auto;
 }
