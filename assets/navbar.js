@@ -17,16 +17,16 @@ class Header extends HTMLElement {
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="assets/team2.html">Team</a>
+              <a class="nav-link" href="team2.html">Team</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="assets/events2021.html">Events</a>
+               <a class="nav-link" href="events2021.html">Events</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="assets/work.html">Work</a>
+               <a class="nav-link" href="work.html">Work</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="assets/photoGallery.html">Photo Gallery</a>
+               <a class="nav-link" href="photoGallery.html">Photo Gallery</a>
              </li>
           </ul>
         </div>
