@@ -48,10 +48,40 @@
    <script src="templates/navbar.js" type="text/javascript" defer></script>
    <script src="templates/footer.js" type="text/javascript" defer></script>
    <script src="anim.js" type="text/javascript" defer></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous"> -->
 </head>
 
 <body>
-   <header-comp></header-comp>
+   <!-- <header-comp></header-comp> -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="navbar-img" src="./logos/CoEP.jpeg"></img><img class="navbar-img" src="./logos/DSAI.jpeg"></img></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item" id="home">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item" id="team"> 
+              <a class="nav-link" href="team2.html">Team</a>
+            </li>
+            <li class="nav-item" id="events">
+               <a class="nav-link" href="events2021.html">Events</a>
+             </li>
+             <li class="nav-item" id="work">
+               <a class="nav-link" href="work.html">Work</a>
+             </li>
+             <li class="nav-item" id="photo-gallery">
+               <a class="nav-link" href="photoGallery2.html">Photo Gallery</a>
+             </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
    <!-- Particle animation lives here -->
    <div id="particles-js"></div>
 
@@ -61,10 +91,18 @@
          Club </h1>
       <div class="works">
          <div style="display: flex; justify-content: center; flex: 1">
-            <a href="http://github.com/dsai-coep"><img class="github-img" src="images/github.png"></img></a>
+            <button id="github-button" class="btn btn-block btn-social btn-github" href="http://github.com/dsai-coep">
+               GitHub
+               <i class="fa fa-github"></i>
+            </button>
+            <!-- <button href="http://github.com/dsai-coep"><h5 style="display: inline;">GitHub</h5><img class="github-img" src="images/github.png"></img></button> -->
          </div>
          <div style="display: flex; justify-content: center; flex: 1">
-            <a href="https://coepdsai.github.io/"><img class="dsai-img" src="logos/DSAI.jpeg"></img></a>
+            <button id="blog-button" class="btn btn-block btn-social btn-blog" href="https://coepdsai.github.io/">
+               Blog
+               <i class="fa fa-book" src="logos/blog-solid.svg"></i>
+            </button>
+            <!-- <a href="https://coepdsai.github.io/"><img class="dsai-img" src="logos/DSAI.jpeg"></img></a> -->
          </div>
       </div>
    </div>
@@ -114,7 +152,7 @@
 
    <!-- JS includes -->
    <script>
-      var title = document.getElementsByClassName("title")[0];
+      var title = document.getElementsByClassName("home-title")[0];
       title.style.top = "21%";
       var content = document.getElementsByClassName("content-holder")[0];
       content.style.top = `${window.innerHeight}px`;
@@ -173,10 +211,10 @@
 
    </script>
    <!-- RequireJS script -->
-   <script src="scripts/require.js?crc=4177726516" type="text/javascript" async
+   <!-- <script src="scripts/require.js?crc=4177726516" type="text/javascript" async
       data-main="scripts/museconfig.js?crc=3936894949"
       onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }"
-      onerror="window.Muse.assets.check();"></script>
+      onerror="window.Muse.assets.check();"></script> -->
 
    <!--HTML Widget code-->
 
