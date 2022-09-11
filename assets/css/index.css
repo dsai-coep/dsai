@@ -89,6 +89,14 @@ footer {
     padding-right: 0 !important;
 }
 
+.content-title {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+ }
+ .content {
+    padding: 4vw 8vw !important;
+ }
+
 .content-flex-1 {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -186,6 +194,8 @@ body {
     border-width: 1px;
     border-color: #1f2022;
     transition: 0.5s all ease;
+    color: #1f2022;
+    text-decoration: none
 }
 
 #github-button:hover {
@@ -202,6 +212,8 @@ body {
     border-width: 1px;
     border-color: #1f2022;
     transition: 0.5s all ease;
+    color: #1f2022;
+    text-decoration: none
 }
 
 #blog-button:hover {
@@ -308,8 +320,8 @@ body {
 .home-title {
     position: absolute;
     z-index: 2000;
-    margin-left: 21%;
+    margin: 0 20vw;
     /* background-color: rgba(240, 242, 245, 0.42); */
     border-radius: 5px;
     padding: 1% 1%;
-}
+ }
