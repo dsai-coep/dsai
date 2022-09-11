@@ -501,7 +501,7 @@ nav {
 
 .footer {
     position: fixed;
-    bottom: 0px;
+    bottom: -10px;
     width: 100%;
     z-index: 5000;
 }
@@ -622,38 +622,6 @@ body {
     height: auto;
 }
 
-#github-button {
-    width: 100%;
-    font-size: large;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1f2022;
-    transition: 0.5s all ease;
-}
-
-#github-button:hover {
-    background-color: #1f2022;
-    color: #f9f9f9;
-    opacity: 84%;
-    transition: 0.5s all ease;
-}
-
-#blog-button {
-    width: 100%;
-    font-size: large;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #1f2022;
-    transition: 0.5s all ease;
-}
-
-#blog-button:hover {
-    background-color: #1f2022;
-    color: #f9f9f9;
-    opacity: 84%;
-    transition: 0.5s all ease;
-}
-
 .dsai-img {
     width: 64px;
     height: auto;
@@ -737,4 +705,5 @@ body {
     /* background-color: rgba(240, 242, 245, 0.42); */
     border-radius: 5px;
     padding: 1% 1%;
+    margin-top: 16%;
 }
