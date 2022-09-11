@@ -12,3 +12,5 @@ Members and ex-core/Alumni
 8) Photo Gallery - Dropdown
 Title and dropdown
 9) Events reduce image size
+
+1) Remove footer

@@ -699,6 +699,10 @@ body {
     background-color: rgba(255,255,255,0.4);
 }
 
+.bottom-event {
+    margin-bottom: 84px;
+}
+
 .heading {
     display: flex;
     width: 80%;
