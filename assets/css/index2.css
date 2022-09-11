@@ -675,11 +675,9 @@ body {
 }
 
 .home-title {
-    position: absolute;
     z-index: 2000;
     margin-left: 21%;
-    /* background-color: rgba(240, 242, 245, 0.42); */
+    background-color: rgba(240, 242, 245, 0.42);
     border-radius: 5px;
     padding: 1% 1%;
-    margin-top: 16%;
 }
