@@ -2,7 +2,7 @@
 <html class="nojs html css_verticalspacer" lang="en-US">
 
 <head>
-
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
    <meta name="generator" content="2018.1.1.386" />
 
@@ -52,6 +52,26 @@
    <!-- <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"> -->
    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous"> -->
     <link rel="icon" type="image/x-icon" href="logos/DSAI.jpeg">
+
+    <style>
+      @media (max-width: 800px) {
+         .content-title {
+            padding-top: 21vw;
+            padding-bottom: 21vw;
+         }
+         .content {
+            padding: 20vw 10vw;
+         }
+         .home-title {
+            position: absolute;
+            z-index: 2000;
+            margin: 0 20vw;
+            /* background-color: rgba(240, 242, 245, 0.42); */
+            border-radius: 5px;
+            padding: 1% 1%;
+         }
+      }
+    </style>
    </head>
 
 <body>
@@ -84,7 +104,11 @@
       </div>
     </nav>
    <!-- Particle animation lives here -->
-   <div id="particles-js"></div>
+   <div class="container-fluid">
+      <div class="row">
+         <div id="particles-js" class="col-md-12"></div>
+      </div>
+   </div>
 
    <div class="home-title">
       <h1> CoEP Tech Data Science and<br>
@@ -108,43 +132,37 @@
       </div>
    </div>
 
-   <div class="clearfix" id="page">
+   <div class="" id="page">
    </div>
 
    <div class="content-holder">
-      <div class="vision content-flex-1 reveal">
-         <div class="content-title">
-            <div style="display: block;">
-               <div style="display: flex;justify-content: center;margin-top: -50%; margin-bottom: 21%;">
-                  <!-- <img src="images/monitoringw.png"> -->
-               </div>
+      <div class="reveal container-fluid">
+         <div class="row">
+            <div class="content-title col-md-2">
                <h1>Our Vision</h1>
             </div>
-         </div>
-         <div class="content">
-            <ol>
-               <li>We aim to inculcate in depth knowledge of artificial intelligence, machine learning and other domain specific fields like national language processing, GIS, etc in students so as to make COEP a haven for data science and artificial intelligence enthusiasts and place where companies would connect to students active in these fields</li>
-               <li>We aim to create a club where people irrespective their different engineering streams and branches are united by their passion of Data science and Artificial Intelligence</li>
-               <li>We aim to collaborate with clubs, companies and institutes in different fields for projects and research in Data science, Artificial intelligence, etc. and make COEP one of the best colleges in these fields. </li>
-            </ol>
+            <div class="content col-md-10">
+               <ol>
+                  <li>We aim to inculcate in depth knowledge of artificial intelligence, machine learning and other domain specific fields like national language processing, GIS, etc in students so as to make COEP a haven for data science and artificial intelligence enthusiasts and place where companies would connect to students active in these fields</li>
+                  <li>We aim to create a club where people irrespective their different engineering streams and branches are united by their passion of Data science and Artificial Intelligence</li>
+                  <li>We aim to collaborate with clubs, companies and institutes in different fields for projects and research in Data science, Artificial intelligence, etc. and make COEP one of the best colleges in these fields. </li>
+               </ol>
+            </div>
          </div>
       </div>
-      <div class="mission content-flex-2 reveal">
-         <div class="content">
-            <p>The purpose of Data Science and Artificial Intelligence Club is to promote research, education, training and development in the realm of Artificial Intelligence(AI), Data Science (DS), Natural Language Processing(NLP), Deep Learning (DL), Remote Sensing(RS) and Geographic Information System(GIS)</p>
-            <ol>
-               <li>To provide a forum for students, members of the public and faculty members to discuss, debate and present various topics and research related to the field of AI, DS, NLP, DL, RS and GIS</li>
-               <li>To encourage students to participate and conduct Hackathons, Data-a-thons, technical events in AI, DS, NLP, DL, RS and GIS</li>
-               <li>To encourage and support student research activities</li>
-               <li>To evolve an informal environment for socializing and networking within the field of AI, DS, NLP, DL, RS and GIS. Invite technical experts in domain for knowledge advancement</li>
-            </ol>
-         </div>
-         <div class="content-title">
-            <div style="display: block;">
-               <div style="display: flex;justify-content: center;margin-top: -50%; margin-bottom: 21%;">
-                  <!-- <img src="images/mission.png"> -->
-               </div>
+      <div class="reveal container-fluid">
+         <div class="row">
+            <div class="content-title col-md-2">
                <h1>Our Mission</h1>
+            </div>
+            <div class="content col-md-10">
+               <p>The purpose of Data Science and Artificial Intelligence Club is to promote research, education, training and development in the realm of Artificial Intelligence(AI), Data Science (DS), Natural Language Processing(NLP), Deep Learning (DL), Remote Sensing(RS) and Geographic Information System(GIS)</p>
+               <ol>
+                  <li>To provide a forum for students, members of the public and faculty members to discuss, debate and present various topics and research related to the field of AI, DS, NLP, DL, RS and GIS</li>
+                  <li>To encourage students to participate and conduct Hackathons, Data-a-thons, technical events in AI, DS, NLP, DL, RS and GIS</li>
+                  <li>To encourage and support student research activities</li>
+                  <li>To evolve an informal environment for socializing and networking within the field of AI, DS, NLP, DL, RS and GIS. Invite technical experts in domain for knowledge advancement</li>
+               </ol>
             </div>
          </div>
       </div>
@@ -161,56 +179,6 @@
    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script><script  src="./particles.js"></script>
 
-   <script type="text/javascript">
-      if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-   </script>
-   <script type="text/javascript">
-      window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
-   </script>
-   <!-- Other scripts -->
-   <script type="text/javascript">
-      // Decide whether to suppress missing file error or not based on preference setting
-      var suppressMissingFileError = false
-   </script>
-   <script type="text/javascript">
-      window.Muse.assets.check = function (c) {
-         if (!window.Muse.assets.checked) {
-            window.Muse.assets.checked = !0; var b = {}, d = function (a, b) { if (window.getComputedStyle) { var c = window.getComputedStyle(a, null); return c && c.getPropertyValue(b) || c && c[b] || "" } if (document.documentElement.currentStyle) return (c = a.currentStyle) && c[b] || a.style && a.style[b] || ""; return "" }, a = function (a) {
-               if (a.match(/^rgb/)) return a = a.replace(/\s+/g, "").match(/([\d\,]+)/gi)[0].split(","), (parseInt(a[0]) << 16) + (parseInt(a[1]) << 8) + parseInt(a[2]); if (a.match(/^\#/)) return parseInt(a.substr(1),
-                  16); return 0
-            }, f = function (f) {
-               for (var g = document.getElementsByTagName("link"), j = 0; j < g.length; j++)if ("text/css" == g[j].type) { var l = (g[j].href || "").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/); if (!l || !l[1] || !l[2]) break; b[l[1]] = l[2] } g = document.createElement("div"); g.className = "version"; g.style.cssText = "display:none; width:1px; height:1px;"; document.getElementsByTagName("body")[0].appendChild(g); for (j = 0; j < Muse.assets.required.length;) {
-                  var l = Muse.assets.required[j], k = l.match(/([\w\-\.]+)\.(\w+)$/), i = k && k[1] ?
-                     k[1] : null, k = k && k[2] ? k[2] : null; switch (k.toLowerCase()) { case "css": i = i.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1"); g.className += " " + i; i = a(d(g, "color")); k = a(d(g, "backgroundColor")); i != 0 || k != 0 ? (Muse.assets.required.splice(j, 1), "undefined" != typeof b[l] && (i != b[l] >>> 24 || k != (b[l] & 16777215)) && Muse.assets.outOfDate.push(l)) : j++; g.className = "version"; break; case "js": j++; break; default: throw Error("Unsupported file type: " + k); }
-               } c ? c().jquery != "1.8.3" && Muse.assets.outOfDate.push("jquery-1.8.3.min.js") : Muse.assets.required.push("jquery-1.8.3.min.js");
-               g.parentNode.removeChild(g); if (Muse.assets.outOfDate.length || Muse.assets.required.length) g = "Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.", f && Muse.assets.outOfDate.length && (g += "\nOut of date: " + Muse.assets.outOfDate.join(",")), f && Muse.assets.required.length && (g += "\nMissing: " + Muse.assets.required.join(",")), suppressMissingFileError ? (g += "\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.", console.log(g)) : alert(g)
-            }; location && location.search && location.search.match && location.search.match(/muse_debug/gi) ?
-               setTimeout(function () { f(!0) }, 5E3) : f()
-         }
-      };
-      var muse_init = function () {
-         require.config({ baseUrl: "" }); require(["jquery", "museutils", "whatinput", "jquery.watch", "jquery.scrolleffects"], function (c) {
-            var $ = c; $(document).ready(function () {
-               try {
-                  window.Muse.assets.check($);/* body */
-                  Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-                  Muse.Utils.prepHyperlinks(true);/* body */
-                  Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-                  Muse.Utils.fullPage('#page');/* 100% height page */
-                  $('#u1245-5').registerPositionScrollEffect([{ "in": [-Infinity, 23], "speed": [0.2, 0] }, { "in": [23, Infinity], "speed": [0.4, 1] }]);/* scroll effect */
-                  $('#u1297-11').registerPositionScrollEffect([{ "in": [-Infinity, 8.4], "speed": [-0.8, 1] }, { "in": [8.4, Infinity], "speed": [-0.49, 1] }]);/* scroll effect */
-                  $('#u1348-5').registerPositionScrollEffect([{ "in": [-Infinity, -17.2], "speed": [-0.9, 1] }, { "in": [-17.2, Infinity], "speed": [-0.6, 1] }]);/* scroll effect */
-                  $('#u1359-15').registerPositionScrollEffect([{ "in": [-Infinity, -28.25], "speed": [0.8, 1] }, { "in": [-28.25, Infinity], "speed": [0.6, 1] }]);/* scroll effect */
-                  $('#u1749').registerPositionScrollEffect([{ "in": [-Infinity, 9], "speed": [0.7, 1] }, { "in": [9, Infinity], "speed": [0.5, 1] }]);/* scroll effect */
-                  $('#u1752').registerPositionScrollEffect([{ "in": [-Infinity, 5], "speed": [-0.7, 1] }, { "in": [5, Infinity], "speed": [-0.6, 1] }]);/* scroll effect */
-                  Muse.Utils.showWidgetsWhenReady();/* body */
-                  Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-               } catch (b) { if (b && "function" == typeof b.notify ? b.notify() : Muse.Assert.fail("Error calling selector function: " + b), false) throw b; }
-            })
-         })
-      };
-
-   </script>
    <!-- RequireJS script -->
    <!-- <script src="scripts/require.js?crc=4177726516" type="text/javascript" async
       data-main="scripts/museconfig.js?crc=3936894949"
